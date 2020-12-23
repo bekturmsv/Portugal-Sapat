@@ -1,0 +1,18 @@
+.product-card {
+    width: 30%;
+    margin: 100px 0;
+    -webkit-box-shadow: 6px 7px 17px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 17px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 7px 17px -1px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width:375px){
+    .product-card{
+        width: 100%;
+        display: block;
+    }
+}

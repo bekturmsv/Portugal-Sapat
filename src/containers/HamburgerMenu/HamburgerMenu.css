@@ -1,0 +1,137 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+}
+/* скрываем чекбокс */
+
+#menu__toggle{
+    opacity: 0;
+}
+
+/* стилизуем кнопку */
+
+.menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* добавляем "гамбургер" */
+
+.menu__btn>span, .menu__btn>span::before, .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+/* контейнер меню */
+
+.menu__box{
+    display: block;
+    position: absolute;
+    /* visibility: hidden; */
+    top: 0;
+    left: -100%;
+    width: 300px;
+    /* height: 100%; */
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    overflow-y: scroll;
+    height: 500px;
+}
+
+/* элементы меню */
+
+.menu__item{
+    display: block;
+    padding: 12px 24px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu__btn span,.menu__btn span:after, .menu__btn span:before{
+    background-color: #000;
+    
+}
+.menu__item:hover {
+    background-color: #5b5d5e;
+    color: #fff;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+  font-weight: 300;
+}
+
+
+.menu__box li {
+    line-height: 40px;
+    text-align: left;
+}
+
+.menu__box li a {
+    font-family: inherit;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 375px){
+    .manu-box{
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+*{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.cart-table{
+    margin-top: 8%;
+    /* width: 100%; */
+}
+.tr-info{
+    width: 100%;
+}
+.tr-title > th{
+    text-align: center;
+}
+.tr-info  td{
+    width: 15%;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.delete-btn-cart{
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all .5s;
+    border: none;
+    
+    background-color: gray;
+}
+.total-price{
+    margin-top: 20px;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 1.3em;
+}
+.delete-btn-cart:hover{
+    background-color: gray;
+    color: #fff;
+}
+.btn-place-cart{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.pay-cart{
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.3em;
+    transition: all .5s;
+}
+
+.pay-cart:hover{
+    background-color: #202020;
+    color: #fff;
+}
+@media screen and (max-width:768px){
+    .cart-table{
+        width: 100%;
+    }
+    .tr-info td {
+        width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    }
+    
+    .tr-title{
+        display: none;
+    }
+}
+
+
+@media screen and  (max-width: 375px){
+    .cart-table{
+        width: 100%;
+    }
+    .tr-info td {
+        width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    }
+    .tr-title{
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+.add-product{
+    background-color: gray;
+    text-align: center;
+
+}
+
+.add-product input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    border: none;
+    /* border-radius: 10px; */
+    height: 30px;
+
+    background-color: rgb(231, 214, 240);
+    width: 230px;
+    height: 29px;
+    font-size: 16px;
+
+    
+}
+
+.btn-add {
+    margin: 10px 0 ;
+    color:black;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: all 1s;
+}
+
+.btn-add:hover{
+    color: #fff;
+    
+}

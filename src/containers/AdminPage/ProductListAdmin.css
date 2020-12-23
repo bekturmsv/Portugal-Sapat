@@ -1,0 +1,38 @@
+.ul_list{
+    list-style-type: none;
+}
+.liStyle{
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(46, 44, 44);
+}
+
+.card-admin{
+    width: 30%;
+    margin: 25px;
+}
+@media screen and (max-width: 768px){
+    .product-card-admin{
+       width: 90%;
+       margin: auto;
+    }
+    .card-admin{
+        width: 90%;
+    }
+    .cardd{
+        max-width: 100%;
+        margin: 20px 0px;
+    }
+}
+@media screen and (max-width:360px){
+    .product-card-admin{
+        display: block;
+       
+    }
+    .admin-product{
+        margin-top: 35px;
+    }
+}
+

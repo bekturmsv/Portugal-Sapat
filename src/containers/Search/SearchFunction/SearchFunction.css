@@ -1,0 +1,20 @@
+.search-func{
+    margin-top: 250px;
+    margin-bottom: 150px;
+}
+
+.search-result{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap
+}
+.search-div{
+    text-align: center;
+}
+
+@media screen and (max-width: 375px){
+    .search-result{
+        display: block;
+        width: 100%;
+    }
+}
