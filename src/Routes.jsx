@@ -29,10 +29,7 @@ const Routes = () => {
                 <Switch>
                     <ProductContextProvider>
                         <Navbar />
-                        <Route exact path="/home" component={HomeBody} />
-                        {/* <Route exact path="/search" component={SearchResult}/> */}
-                        {/* <Route exact path="/search" component={NavbarSearch} /> */}
-                        {/* <Route exact path="/add" component={AddProduct} /> */}
+                        <Route exact path="/" component={HomeBody} />
                         <Route exact path="/wish" component={Wish} />
                         <Route exact path="/admin" component={AdminPage} />
                         <Route exact path="/list" component={ProductList} />
@@ -41,14 +38,12 @@ const Routes = () => {
                         <Route path="/details/:id" component={ProductDetails} />
                         <Route exact path="/cart" component={Cart} />
                         <Route exact path="/makeorder" component={CreditCard} />
-                        <Route exact path="/" component={HomeBody} />
-                        {/* <Route exact path="/search" component={SearchResult} /> */}
                         <Route exact path="/payment" component={Payment}/   >
                     </ProductContextProvider>
                 </Switch>
                 <Switch>
                     <AuthContextProvider>
-                        <Route exact path="/" component={Home} />
+                        <Route exact path="/" component={HomeBody} />
                         <Route exact path="/signup" component={SignUp} />
                         <Route exact path="/signin" component={SignIn} />
                         <Route exact path="/review" component={ParentReview} />
